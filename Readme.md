@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Борисов](https://up.htmlacademy.ru/htmlcss/31/user/1724239).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Лесухин](https://htmlacademy.ru/profile/caneklis).
 
 ---
 
