@@ -6,98 +6,93 @@
   </head>
   <body>
   <header>
-      <div>
-          <nav class="main-menu">  <!--главное меню сайта-->
-              <ul>
-                  <li>
-                      <a class="menu-item-1" href="#">Информация</a>
-                  </li>
-                  <li>
-                     <a class="menu-item-2" href="#">Фото и видео</a> 
-                  </li>
-                  <li>
-                      <a class="logo" href="index.html"> 
-                          <img class="logo" src="" width="138" height="70" alt="Логотип">     
-                      </a>  
-                  </li>
-                  <li>
-                      <a class="menu-item-4" href="#">Карта штата</a>      
-                  </li>
-                  <li>
-                      <a class="menu-item-5" href="#">Гостиницы</a>      
-                  </li>
-               </ul>
-          </nav>  <!--конец разметки главного меню-->
-      </div>      
+      <nav class="main-menu">  <!--главное меню сайта-->
+          <a class="logo" href="index.html"> 
+              <img class="logo" src="" width="138" height="70" alt="Логотип">
+          </a>                        
+          <ul>
+              <li>
+                  <a class="menu-item" href="#">Информация</a>
+              </li>
+              <li>
+                  <a class="menu-item" href="#">Фото и видео</a> 
+              </li>
+              <li>
+                  <a class="menu-item" href="#">Карта штата</a>      
+              </li>
+              <li>
+                  <a class="menu-item" href="#">Гостиницы</a>      
+              </li>
+          </ul>
+      </nav>  <!--конец разметки главного меню-->            
   </header>
-  <main class="container">  <!--основное содержание страницы-->
-     
+  <main class="container">  <!--основное содержание страницы-->      
+      
       <div class="welcome-block">          
-          <img class="welcome-text" src="" width="188" height="45" alt="welcome">   
-          <img class="georgeous" src="" width="253" height="30" alt="georgeous">
-          <img class="sedona" src="" width="456" height="78" alt="Sedona">
-          <img class="canyon" src="" width="296" height="80" alt="Grand canyon">
-          <img class="mask" src="" width="1200" height="57" alt="">
-      </div>
+         <!--при стилизации можно установить для этого блока свойство background-->
+      </div>      
       
       <section class="about-sedona">
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>      
       </section>      
       
-      <section class="advantages-block-1">
-          <div class="advantages advantages-1">
-              <h3>Настоящий городок</h3>
-              <span>- №1 -</span>
-              <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>          
-          </div> 
-          <img class="town-view-1" src="" width="800" height="255" alt="Вид города">   
-      </section>
-      
-      <section class="stuff-block">
-          <div class="stuff-item">
-              <img src="" width="72" height="75" alt="Домик">  
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>   
-          </div>             
-          <div class="stuff-item">
-              <img src="" width="70" height="75" alt="Бургер">
-              <h3>Еда</h3>       
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="stuff-item">
-              <img src="" width="64" height="77" alt="Сувенир">
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства</p>
-          </div>          
-      </section> 
-      
-      <section class="advantages-block-1">
-          <img class="town-view-2" src="" width="800" height="255" alt="Мост">
-          <div class="advantages advantages-1">
-              <h3>Там есть мост дьявола</h3>
-              <span>- №2 -</span>  
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
-          </div>           
-      </section>
-      
-      <section class="advantages-block-2">
-          <div class="advantages advantages-2">
-              <h3>Небольшая площадь</h3>
-              <span>- №3 -</span>
-              <p>Все достопримечательности находятся очень близко</p>
-          </div> 
-          <div class="advantages advantages-2">
-              <h3>Красивая дорога</h3>
-              <span>- №4 -</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>      
-          </div>
-          <div class="advantages advantages-2">
-              <h3>Мало туристов</h3>
-              <span>- №5 -</span>      
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>       
-      </section>
+      <ul class="advantages-list">        <!--список - 5 достоинств Седоны-->
+          <li class="advantage-item">              
+              <div class="advantage-text">
+                  <h3>Настоящий городок</h3>
+                  <span>- №1 -</span>
+                  <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>          
+              </div> 
+              <img class="advantage-img" src="" width="800" height="255" alt="Вид города">
+                  <ul class="stuff">
+                      <li class="stuff-item">
+                          <img src="" width="72" height="75" alt="Домик">  
+                          <h3>Жилье</h3>
+                          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>   
+                      </li>             
+                      <li class="stuff-item">
+                          <img src="" width="70" height="75" alt="Бургер">
+                          <h3>Еда</h3>       
+                          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                      </li>
+                      <li class="stuff-item">
+                          <img src="" width="64" height="77" alt="Сувенир">
+                          <h3>Сувениры</h3>
+                          <p>Не только китайского, но и местного производства</p>
+                      </li>          
+                  </ul>                          
+          </li>
+          <li class="advantage-item">
+              <img class="advantage-img" src="" width="800" height="255" alt="Мост">
+              <div class="advantage-text">
+                  <h3>Там есть мост дьявола</h3>
+                  <span>- №2 -</span>  
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
+              </div>      
+          </li>
+          <li class="advantage-item">
+              <div class="advantage-text">
+                  <h3>Небольшая площадь</h3>
+                  <span>- №3 -</span>
+                  <p>Все достопримечательности находятся очень близко</p>
+              </div>                  
+          </li>
+          <li class="advantage-item">
+              <div class="advantage-text">
+                  <h3>Красивая дорога</h3>
+                  <span>- №4 -</span>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>      
+              </div>    
+          </li>
+          <li class="advantage-item">
+              <div class="advantage-text">
+                  <h3>Мало туристов</h3>
+                  <span>- №5 -</span>      
+                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>       
+          </li>                                    
+      </ul>
       
       <div class="search">
           <h2>Заинтересовались?</h2>   
@@ -117,11 +112,17 @@
   
   <footer>  <!--начало разметки футера-->
       <div class="footer-tag">#Visitsedona</div>
-      <div class="social">
-          <a class="social-btn twitter" href="#"></a>
-          <a class="social-btn facebook" href="#"></a>
-          <a class="social-btn youtube" href="#"></a>   
-      </div>
+      <ul class="social">
+          <li>     
+              <a class="social-btn twitter" href="#"></a>
+          </li>      
+          <li>
+              <a class="social-btn facebook" href="#"></a>
+          </li>
+          <li>      
+              <a class="social-btn youtube" href="#"></a>
+          </li>         
+      </ul>
       <div class="website-by">
           <span>Website by</span>
           <a class="htmlacad-logo" href="https://htmlacademy.ru"></a>
