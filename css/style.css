@@ -1,0 +1,43 @@
+/*General*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/*Header*/
+.header-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 138px;
+  height: 70px;
+  margin: auto;
+}
+
+/*Main*/
+.welcome-block {
+	text-align: center;
+	background-color: #6e8595;
+	background-image: url("../img/town-bgr.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
+}
+
+.welcome-block::after {
+	content: "";
+	display: block;
+	width: 100%;
+	min-height: 57px;
+	background-image: url(../img/bgr-shape.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
+
+
+
+
+
