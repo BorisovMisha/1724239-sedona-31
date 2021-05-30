@@ -4,137 +4,165 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-  <header>
-      <nav class="main-menu">  <!--главное меню сайта-->
-          <a class="header-logo" href="index.html"> 
+  <body class="page-body">
+  <header class="main-header">
+      <nav class="main-nav">  <!--главное меню сайта-->
+          <a class="main-header-logo" href="index.html">
               <img src="img/icons/logo.svg" width="138" height="70" alt="Логотип города Седона">
-          </a>                        
-          <ul>
+          </a>
+          <ul class="site-nav">
               <li>
-                  <a class="menu-item" href="#">Информация</a>
+                  <a class="nav-item" href="#">Информация</a>
               </li>
               <li>
-                  <a class="menu-item" href="#">Фото и видео</a> 
+                  <a class="nav-item" href="#">Фото и видео</a>
               </li>
               <li>
-                  <a class="menu-item" href="#">Карта штата</a>      
+                  <a class="nav-item" href="#">Карта штата</a>
               </li>
               <li>
-                  <a class="menu-item" href="#">Гостиницы</a>      
+                  <a class="nav-item" href="#">Гостиницы</a>
               </li>
           </ul>
-      </nav>  <!--конец разметки главного меню-->            
+      </nav>  <!--конец разметки главного меню-->
   </header>
-  <main class="container">  <!--основное содержание страницы-->      
-      
-      <div class="welcome-block">          
-         <!--при стилизации можно установить для этого блока свойство background-->
+  <main class="container">  <!--основное содержание страницы-->
+
+      <section class="welcome-block">
+         <!--при стилизации нужно установить для этого блока свойство background-->
          <img src="img/icons/bgr-caption.svg" width="458" height="352" alt="Welcome to Sedona">
-      </div>      
-      
+      </section>
+
       <section class="about-town">
           <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>      
-      </section>      
-      
-      <section class="town-advantages">
-          <ul class="advantage-list">        <!--список - 5 достоинств Седоны-->        
-              <li class="advantage-item">            <!-- №1 -->       
-                  <div class="advantage-text">
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+      </section>
+
+      <section class="advantages">
+          <ul class="advantages-list">        <!--список - 5 достоинств Седоны-->
+              <li class="advantages-item first-advantage">            <!-- №1 -->
+                  <div class="advantages-item-text">
                      <h2>Настоящий городок</h2>
                      <span>- №1 -</span>
-                     <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>         
-                  </div> 
-                  <img class="advantage-img" src="img/town-view.jpg" width="800" height="256" alt="Вид города">
-                  <ul class="stuff">
+                     <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>
+                  </div>
+                  <p>
+                    <img class="advantages-item-img" src="img/town-view.jpg" width="800" height="256" alt="Вид города">
+                  </p>
+                  <ul class="stuff-list">
                      <li class="stuff-item">
-                        <img src="img/icons/house.svg" width="75" height="72" alt="Домик">  
+                        <img src="img/icons/house.svg" width="75" height="72" alt="Домик">
                         <h3>Жилье</h3>
-                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>   
-                     </li>             
+                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                     </li>
                      <li class="stuff-item">
                         <img src="img/icons/burger.svg" width="75" height="70" alt="Бургер">
-                        <h3>Еда</h3>       
+                        <h3>Еда</h3>
                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                      </li>
                      <li class="stuff-item">
                         <img src="img/icons/souvenir.svg" width="64" height="77" alt="Сувенир">
                         <h3>Сувениры</h3>
                         <p>Не только китайского, но и местного производства</p>
-                     </li>          
-                  </ul>                          
+                     </li>
+                  </ul>
               </li>
-              <li class="advantage-item">        <!-- №2 -->
-                  <img class="advantage-img" src="img/devil-bridge.jpg" width="800" height="256" alt="Мост">
-                  <div class="advantage-text">
+              <li class="advantages-item second-advantage">        <!-- №2 -->
+                  <p>
+                    <img class="advantages-item-img" src="img/devil-bridge.jpg" width="800" height="256" alt="Мост">
+                  </p>
+                  <div class="advantages-item-text">
                      <h2>Там есть мост дьявола</h2>
-                     <span>- №2 -</span>  
-                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
-                  </div>      
+                     <span>- №2 -</span>
+                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  </div>
               </li>
-              <li class="advantage-item">         <!-- №3 -->
-                  <div class="advantage-text">
+              <li class="advantages-item">         <!-- №3 -->
+                  <div class="advantages-item-text">
                      <h2>Небольшая площадь</h2>
                      <span>- №3 -</span>
                      <p>Все достопримечательности находятся очень близко</p>
-                  </div>                  
+                  </div>
               </li>
-              <li class="advantage-item">         <!-- №4 -->   
-                  <div class="advantage-text">
+              <li class="advantages-item">         <!-- №4 -->
+                  <div class="advantages-item-text">
                      <h2>Красивая дорога</h2>
                      <span>- №4 -</span>
-                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>      
-                  </div>    
+                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  </div>
               </li>
-              <li class="advantage-item">         <!-- №5 --> 
-                  <div class="advantage-text">
+              <li class="advantages-item">         <!-- №5 -->
+                  <div class="advantages-item-text">
                      <h2>Мало туристов</h2>
-                     <span>- №5 -</span>      
+                     <span>- №5 -</span>
                      <p>Большинство едет в Гранд Каньон и толпится там</p>
-                  </div>       
-              </li>                                    
+                  </div>
+              </li>
           </ul>
-      </section> <!--town-advantages-->
-          
-      <div class="search">
-          <h2>Заинтересовались?</h2>   
-          <p>Укажите предполагаемые даты поездки,<br/> 
+      </section> <!--advantages-->
+
+      <section class="search-offers">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br/>
              и мы покажем лучшие предложения гостиниц в Седоне
           </p>
-      </div>
-     
-      <div class="map">
-          <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
-          <form class="search-form" action="#">
-            <!--разметку всплывающей формы поиска пока не делаем-->                 
+          <a class="search-btn" href="#"><span>Поиск гостиницы в Седоне</span></a>
+      </section>
+
+      <section class="map">          
+          <form class="hotel-form" action="https://echo.htmlacademy.ru" method="get">
+          <!--делаем разметку всплывающей формы поиска отеля-->
+             <div class="hotel-form-item">
+               <label for="arrive-date">Дата заезда:</label>
+               <input type="text" name="arrive-date" id="arrive-date" placeholder="24 апреля 2017" required>
+               <button class="calendar-btn" type="button"></button>
+             </div>
+             <div class="hotel-form-item">
+               <label for="depart-date">Дата заезда:</label>
+               <input type="text" name="depart-date" id="depart-date" placeholder="24 апреля 2017" required>
+               <button class="calendar-btn" type="button"></button>
+             </div>
+             <div class="hotel-form-item">
+               <label for="adult-count">Взрослые:</label>
+               <button class="minus-btn" type="button"></button>
+               <input type="text" name="adult-count" id="adult-count" placeholder="2" required>
+               <button class="plus-btn" type="button"></button>
+               <label for="child-count">Дети:</label>
+               <button class="minus-btn" type="button"></button>
+               <input type="text" name="child-count" id="child-count" placeholder="0" required>
+               <button class="plus-btn" type="button"></button>
+               <button class="hotel-find-btn" type="submit"><span>Найти</span></button>
+             </div>
           </form>
-      </div>
-          
+      </section>
+
   </main> <!--конец разметки основного содержимого-->
-  
-  <footer>  <!--начало разметки футера-->
-      <div class="footer-tag">#Visitsedona</div>
+
+  <footer class="main-footer">  <!--начало разметки футера-->
+      <div class="footer-tag">
+          <a href="">#visitsedona</a>
+      </div>
       <ul class="social">
-          <li>     
+          <li class="social-item">
               <a class="social-btn twitter" href="#"></a>
-          </li>      
-          <li>
+          </li>
+          <li class="social-item">
               <a class="social-btn facebook" href="#"></a>
           </li>
-          <li>      
+          <li class="social-item">
               <a class="social-btn youtube" href="#"></a>
-          </li>         
+          </li>
       </ul>
-      <div class="website-by">
-          <span>Website by</span>
-          <a class="htmlacad-logo" href="https://htmlacademy.ru"></a>
-      </div>                            
-  </footer>                      
-  
+      <div class="html-logo">
+          <span>website by</span>
+          <a class="html-logo-btn" href="https://htmlacademy.ru"></a>
+      </div>
+  </footer>
+
   </body>
 </html>
