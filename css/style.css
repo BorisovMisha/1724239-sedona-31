@@ -1,8 +1,6 @@
 /*General*/
 * {
-  margin: 0;
-  border: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -33,10 +31,7 @@
   min-width: 768px;
   max-width: 1200px;
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0 auto;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-neutral);
@@ -46,9 +41,11 @@
   text-decoration: none;
 }
 
-. page-body img {
+.page-body img {
   max-width: 100%;
   height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 
@@ -169,27 +166,50 @@
 
 .advantages-item {
   background-color: var(--extra-neutral);
+  min-height: 256px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.first-advantage .advantages-item-text {
-  grid-column: 1/1;
-  grid-row: 1/1;
+.advantage-item-full
+{
+  grid-column: 1/-1;
 }
 
-.first-advantage .advantages-item-pict {
-  grid-column: 2/3;
-  grid-row: 1/1;
+.avantages-item-text {
+  width: 400px;
+  text-align: center;
+  line-height: 21px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages-item-full .advantages-item-text {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+ .advantages-item-pict {
+   width: 600px;
+  /* display: block;
+   max-width: 100%;
+   height: auto; */
 }
 
 .stuff-list {
-
+ width: 100%;
+ list-style: none;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ height: 256px;
+ background-color: white;
 }
 
 .house {
@@ -201,25 +221,7 @@
 .souvenir {
 }
 
-.second-advantage .advantages-item-text {
 
-}
-
-.second-advantage .advantages-item-pict {
-
-}
-
-.third-advantage {
-
-}
-
-.fourth-advantage {
-
-}
-
-.fifth-advantage {
-
-}
 
 /*
 .advantages-list {
@@ -287,13 +289,6 @@
 }
 */
 
-.advantages-item-text {
-  max-width: 400px;
-  text-align: center;
-  line-height: 21px;
-  color: var(--basic-white);
-  background-color: var(--basic-light-blue);
-}
 
 .advantages-item-text h2 {
   font-size: 21px;
