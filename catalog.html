@@ -38,22 +38,24 @@
 
   <main>
     <!--начало разметки основной части страницы-->
+    <h1 class="visually-hidden">Каталог отелей Седоны</h1>
     <section class="hotel-select">
       <!--делаем разметку всплывающей формы поиска отеля-->
+      <h2 class="visually-hidden">Выбор из каталога</h2>
       <form class="hotel-catalog-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul class="hotel-options-list">
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="pool" id="pool" checked>
+              <input class="filter-input visually-hidden" type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
             </li>
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="parking" id="parking">
+              <input class="filter-input visually-hidden" type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
             </li>
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="wi-fi" id="wi-fi">
+              <input class="filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </li>
           </ul>
@@ -62,28 +64,43 @@
           <legend>Тип жилья:</legend>
           <ul class="hotel-options-list">
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="hotel" id="hotel" checked>
+              <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
             </li>
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="motel" id="motel" checked>
+              <input class="filter-input visually-hidden" type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
             </li>
             <li class="hotel-option">
-              <input class="filter-input" type="checkbox" name="apartments" id="apartments">
+              <input class="filter-input visually-hidden" type="checkbox" name="apartments" id="apartments">
               <label for="apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <!--слайдер не делаем пока-->
-        </fieldset>
-        <button class="filter-btn" type="submit"><span>Показать</span></button>
+        <div class="price-fieldset">
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="label-price" for="min-price">от <input class="input-price" type="text" name="min-price" id="min-price" value="0"></label>
+              <label class="label-price" for="max-price">до <input class="input-price" type="text" name="max-price" id="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </fieldset>
+          <button class="filter-btn" type="submit"><span>Показать</span></button>
+        </div>
+        <!--price-fieldset-->
       </form>
     </section>
 
     <section class="hotel-catalog-sort">
       <!--выбор отеля из каталога-->
+      <h2 class="visually-hidden">Результаты выбора</h2>
       <div class="hotels-sort">
         <span class="hotels-count">Найдено: 3</span>
         <span class="sorting-text">Сортировка:</span>
@@ -100,10 +117,10 @@
         </ul>
         <ul class="arrows-list">
           <li>
-            <a class="arrow-up" href="#"></a>
+            <a class="arrow-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
           </li>
           <li>
-            <a class="arrow-down arrow-active" href="#"></a>
+            <a class="arrow-down arrow-active" href="#"><span class="visually-hidden">По убыванию</span></a>
           </li>
         </ul>
       </div>
@@ -131,6 +148,7 @@
             <div class="rating-data">
               <div class="rating-stars four-stars">
                 <!--размещаем звёзды в background-image-->
+                <span class="visually-hidden">4 звезды</span>
               </div>
               <span class="rating-score">Рейтинг: 8,5</span>
             </div>
@@ -159,6 +177,7 @@
             <div class="rating-data">
               <div class="rating-stars three-stars">
                 <!--размещаем звёзды в background-image-->
+                <span class="visually-hidden">3 звезды</span>
               </div>
               <span class="rating-score">Рейтинг: 8,9</span>
             </div>
@@ -187,6 +206,7 @@
             <div class="rating-data">
               <div class="rating-stars two-stars">
                 <!--размещаем звёзды в background-image-->
+                <span class="visually-hidden">2 звезды</span>
               </div>
               <span class="rating-score">Рейтинг: 9,2</span>
             </div>
@@ -209,18 +229,19 @@
     </div>
     <ul class="social">
       <li class="social-item">
-        <a class="social-btn twitter" href="#"></a>
+        <a class="social-btn twitter" href="#"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social-item">
-        <a class="social-btn facebook" href="#"></a>
+        <a class="social-btn facebook" href="#"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social-item">
-        <a class="social-btn youtube" href="#"></a>
+        <a class="social-btn youtube" href="#"><span class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
     <div class="html-logo">
       <span>website by</span>
       <a class="html-logo-link" href="https://htmlacademy.ru">
+        <span class="visually-hidden">HTML Academy</span>
         <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="currentColor" />
           <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="currentColor" />
