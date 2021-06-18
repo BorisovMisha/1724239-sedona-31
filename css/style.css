@@ -148,11 +148,14 @@ input[type="checkbox"].visually-hidden {
 /*Main page*/
 .welcome-block {
   text-align: center;
+  position: relative;
   background-color: var(--basic-light-blue);
   background-image: url("../img/town-bgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 20%;
+  padding-top: 77px;
+  padding-bottom: 80px;
 }
 
 .welcome-block img {
@@ -162,6 +165,8 @@ input[type="checkbox"].visually-hidden {
 .welcome-block::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   min-height: 57px;
   background-image: url(../img/icons/bgr-shape.svg);
@@ -172,8 +177,8 @@ input[type="checkbox"].visually-hidden {
 
 .about-town {
   width: 100%;
-  height: 216px;
-  padding: 42px 0;
+  padding: 27px 0;
+  padding-bottom: 38px;
   background-color: var(--basic-white);
 }
 
@@ -183,6 +188,7 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-bottom: 44px;
 }
 
 .about-town p {
@@ -238,26 +244,47 @@ input[type="checkbox"].visually-hidden {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 256px;
   background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item-text h2 {
   font-size: 21px;
   font-weight: 700;
+  margin-bottom: 26px;
 }
 
 .advantages-item-text span,
 .advantages-item-text p {
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 23px;
+  display: block;
 }
 
 .stuff-item {
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 60px;
   background-color: var(--basic-white);
+  padding-top: 137px;
+  padding-bottom: 68px;
 }
 
+.house {
+  background-image: url("../img/icons/house.svg");
+}
+
+.food {
+  background-image: url("../img/icons/burger.svg");
+}
+
+.souvenir {
+  background-image: url("../img/icons/souvenir.svg");
+}
+
+/*
 .stuff-item::before {
   content: "";
   position: relative;
@@ -280,28 +307,47 @@ input[type="checkbox"].visually-hidden {
 .souvenir::before {
   background-image: url("../img/icons/souvenir.svg");
 }
+*/
 
 .price-fieldset {
   width: 30%;
   min-width: 220px;
   margin-left: auto;
-  margin-right: 73px;
 }
 
 .price-fieldset fieldset {
   border: none;
+  margin-left: -8px;
+}
+
+.price-fieldset legend {
+  /*margin-top: -3px;*/
 }
 
 .price-controls {
   display: flex;
+  position: relative;
   height: 36px;
   margin-top: 9px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0;
   border-width: 2px;
   border-style: solid;
   border-color: var(--basic-white);
   border-radius: 3px;
+  width: 317px;
+}
+
+.price-controls::after {
+  /* вертикальная линия-разделитель */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+  transform: translate(-50%, -50%);
 }
 
 .label-price {
@@ -320,7 +366,7 @@ input[type="checkbox"].visually-hidden {
 
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .range-controls .scale {
@@ -352,14 +398,14 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-toggle-max {
-  left: 70%;
+  left: 80%;
 }
-
 
 .stuff-item h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin-bottom: 27px;
 }
 
 .stuff-item p {
@@ -370,7 +416,6 @@ input[type="checkbox"].visually-hidden {
 
 .search-offers {
   width: 100%;
-  height: 232px;
   text-align: center;
   background-color: var(--basic-white);
 }
@@ -379,7 +424,8 @@ input[type="checkbox"].visually-hidden {
   font-size: 30px;
   line-height: 36px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 .search-offers p {
@@ -393,6 +439,7 @@ input[type="checkbox"].visually-hidden {
   width: 568px;
   min-height: 86px;
   margin: 0 auto;
+  margin-top: 40px;
   padding: 30px 30px 30px;
   font: inherit;
   font-size: 21px;
@@ -414,6 +461,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .map {
+  position: relative;
   min-height: 593px;
   width: 100%;
   background-color: var(--basic-gray);
@@ -421,6 +469,7 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 100%;
+  margin-bottom: -120px;
 }
 
 /*Search form for hotels*/
@@ -428,7 +477,11 @@ input[type="checkbox"].visually-hidden {
 .hotel-form {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  /* относительно блока .map */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 568px;
   min-height: 395px;
   padding: 55px;
@@ -436,15 +489,15 @@ input[type="checkbox"].visually-hidden {
   background-color: var(--basic-white);
 }
 
-.hotel-form div:last-of-type {
-  margin-bottom: 55px;
-}
 
 .hotel-form-item {
   display: flex;
-  position: relative;
-  margin: 0;
+  flex-wrap: wrap;
   margin-bottom: 29px;
+}
+
+.input-date-block {
+  position: relative;
 }
 
 .hotel-form label,
@@ -561,7 +614,7 @@ input[type="checkbox"].visually-hidden {
 
 .calendar-btn {
   position: absolute;
-  /*отн. hotel-form-item*/
+  /*отн. input-date-block*/
   right: 7px;
   top: 6px;
   margin: 0;
@@ -604,8 +657,9 @@ input[type="checkbox"].visually-hidden {
   background-color: var(--basic-light-blue);
   border: none;
   min-height: 58px;
-  width: 458px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 25px;
 }
 
 .hotel-find-btn:hover,
@@ -623,6 +677,8 @@ input[type="checkbox"].visually-hidden {
   min-height: 217px;
   padding-top: 28px;
   padding-bottom: 28px;
+  padding-left: 73px;
+  padding-right: 73px;
   background-color: var(--basic-neutral);
   background-image: url("../img/town-bgr-blur.jpg");
   background-repeat: no-repeat;
@@ -639,11 +695,12 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
   border: none;
   min-width: 204px;
+  width: 253px;
+  margin-top: -3px;
 }
 
 .hotel-catalog-form legend {
   margin: 0;
-  padding-left: 28px;
   font-size: 16px;
   line-height: 21px;
   color: var(--basic-white);
@@ -663,23 +720,27 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-top: 22px;
-  padding-left: 40px;
   list-style: none;
 }
 
 .hotel-option {
-  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hotel-option:last-child {
+  margin-bottom: 0;
 }
 
 .hotel-option label {
   position: relative;
+  padding-left: 38px;
 }
 
 .filter-input + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -25px;
+  top: 0;
+  left: 0;
   width: 26px;
   height: 23px;
   background-image: url("../img/icons/checkbox-off-enabled.svg");
@@ -714,7 +775,7 @@ input[type="checkbox"].visually-hidden {
   border-style: solid;
   border-color: var(--basic-white);
   border-radius: 3px;
-  margin: 0 auto;
+  margin-left: 85px;
 }
 
 .filter-btn:hover {
@@ -730,7 +791,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   align-items: center;
   min-height: 86px;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 28px;
   padding-left: 73px;
   padding-right: 73px;
@@ -742,7 +803,8 @@ input[type="checkbox"].visually-hidden {
   line-height: 26px;
   margin: 0;
   min-width: 120px;
-  margin-right: 30px;
+  margin-right: 45px;
+  display: block;
   color: var(--basic-black);
 }
 
@@ -827,9 +889,8 @@ input[type="checkbox"].visually-hidden {
 .arrow-up::before {
   position: absolute;
   content: "";
-  left: 2px;
+  left: 0;
   top: 0;
-  /*bottom: 12px;*/
   width: 0;
   height: 0;
   border-style: solid;
@@ -843,9 +904,8 @@ input[type="checkbox"].visually-hidden {
 .arrow-down::before {
   position: absolute;
   content: "";
-  left: 2px;
-  top: 0;
-  /*bottom: 0;*/
+  left: 0;
+  top: 2px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -889,6 +949,12 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
 }
 
+.hotel-catalog-list:last-child {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--extra-gray);
+}
+
 .catalog-item {
   min-height: 150px;
   border-top-width: 1px;
@@ -898,12 +964,13 @@ input[type="checkbox"].visually-hidden {
   padding-right: 73px;
 }
 
+
 .catalog-item-data {
   display: grid;
   grid-template-columns: 135px 1fr 110px;
   min-height: 150px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .catalog-item-description {
@@ -927,7 +994,9 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-type,
 .hotel-price {
-  margin: 0;
+  margin-right: 0;
+  margin-left: -10px;
+  margin-top: -35px;
   margin-bottom: 14px;
 }
 
@@ -938,6 +1007,8 @@ input[type="checkbox"].visually-hidden {
   line-height: 26px;
   text-decoration: none;
   color: var(--basic-black);
+  margin-top: -8px;
+  display: block;
 }
 
 .catalog-item-title:hover,
@@ -955,6 +1026,8 @@ input[type="checkbox"].visually-hidden {
 .rating-score {
   font-weight: 400;
   line-height: 21px;
+  padding: 10px;
+  display: block;
 }
 
 .info-btn {
@@ -964,7 +1037,8 @@ input[type="checkbox"].visually-hidden {
   line-height: 21px;
   text-align: center;
   padding: 3px 17px;
-  margin-right: 10px;
+  margin-right: 7px;
+  margin-top: 5px;
   color: var(--basic-white);
 }
 
@@ -975,6 +1049,7 @@ input[type="checkbox"].visually-hidden {
   line-height: 21px;
   text-align: center;
   padding: 3px 17px;
+  margin-top: 5px;
   color: var(--basic-white);
 }
 
@@ -1020,14 +1095,19 @@ input[type="checkbox"].visually-hidden {
 
 .two-stars {
   width: 41px;
+  margin-left: 70px;
 }
 
 .three-stars {
   width: 65px;
+  margin-left: 47px;
+  margin-top: -2px;
 }
 
 .four-stars {
   width: 89px;
+  margin-left: 22px;
+  margin-top: -2px;
 }
 
 .five-stars {
@@ -1038,11 +1118,14 @@ input[type="checkbox"].visually-hidden {
   color: var(--special-gray);
   text-align: center;
   background-color: var(--basic-neutral);
+  margin-top: 45px;
+  padding: 2px;
 }
 
 /*Footer*/
 .main-footer {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 120px;
   background-color: var(--extra-opacity);
@@ -1060,12 +1143,15 @@ input[type="checkbox"].visually-hidden {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 72px;
+  padding-bottom: 25px;
 }
 
 .footer-tag > a {
   font-size: 21px;
   min-width: 200px;
   color: var(--basic-black);
+  padding-top: 10px;
 }
 
 .social {
@@ -1080,7 +1166,7 @@ input[type="checkbox"].visually-hidden {
 .social-item {
   width: 46px;
   height: 48px;
-  margin: 0 5px;
+  margin: 0 3px;
   background-color: var(--special-dark-blue);
 }
 
@@ -1120,12 +1206,14 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 62px;
 }
 
 .html-logo span {
   font-size: 14px;
   font-weight: 400;
   text-align: right;
+  margin-right: 12px;
 }
 
 .html-logo-link {

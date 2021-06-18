@@ -1,4 +1,4 @@
-<!--  Вариант с сетками 13.06.21  -->
+<!--  Вариант с пиксель-перфект 17.06.21  -->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -15,7 +15,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <!--главное меню сайта-->
-      <a class="main-header-logo" href="">
+      <a class="main-header-logo">
         <img src="img/icons/logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul class="site-nav">
@@ -45,7 +45,7 @@
 
     <section class="about-town">
       <h2 class="visually-hidden">Преимущества</h2>
-      <h1>Седона - небольшой городок в Аризоне,<br /> заслуживающий большего!</h1>
+      <h1>Седона &mdash; небольшой городок в Аризоне,<br /> заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
     </section>
 
@@ -56,7 +56,7 @@
           <!-- №1 -->
           <div class="advantages-item-text">
             <h2>Настоящий<br /> городок</h2>
-            <span>- №1 -</span>
+            <span>&mdash; №1 &mdash;</span>
             <p>Седона - не аттракцион для туристов, там<br /> течет своя жизнь</p>
           </div>
           <div class="advantages-item-pict">
@@ -83,16 +83,16 @@
             <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост">
           </div>
           <div class="advantages-item-text">
-            <h2>Там есть мост дьявола</h2>
-            <span>- №2 -</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <h2>Там есть<br /> мост дьявола</h2>
+            <span>&mdash; №2 &mdash;</span>
+            <p>Да, по нему можно пройти! Если конечно<br /> вы осмелитесь</p>
           </div>
         </li>
         <li class="advantages-item">
           <!-- №3 -->
           <div class="advantages-item-text">
             <h2>Небольшая<br /> площадь</h2>
-            <span>- №3 -</span>
+            <span>&mdash; №3 &mdash;</span>
             <p>Все достопримечательности<br /> находятся очень близко</p>
           </div>
         </li>
@@ -100,7 +100,7 @@
           <!-- №4 -->
           <div class="advantages-item-text">
             <h2>Красивая<br /> дорога</h2>
-            <span>- №4 -</span>
+            <span>&mdash; №4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем<br /> не скучно!</p>
           </div>
         </li>
@@ -108,7 +108,7 @@
           <!-- №5 -->
           <div class="advantages-item-text">
             <h2>Мало<br /> туристов</h2>
-            <span>- №5 -</span>
+            <span>&mdash; №5 &mdash;</span>
             <p>Большинство едет в Гранд Каньон<br /> и толпится там</p>
           </div>
         </li>
@@ -131,13 +131,17 @@
         <!--делаем разметку всплывающей формы поиска отеля-->
         <div class="hotel-form-item">
           <label for="arrive-date">Дата заезда:</label>
-          <input type="text" name="arrive-date" id="arrive-date" placeholder="10 июля 2021" required>
-          <button class="calendar-btn" type="button"><span class="visually-hidden">Календарь</span></button>
+          <div class="input-date-block">
+            <input type="text" name="arrive-date" id="arrive-date" placeholder="24 апреля 2017" required>
+            <button class="calendar-btn" type="button"><span class="visually-hidden">Календарь</span></button>
+          </div>
         </div>
         <div class="hotel-form-item">
-          <label for="depart-date">Дата заезда:</label>
-          <input type="text" name="depart-date" id="depart-date" placeholder="20 июля 2021" required>
-          <button class="calendar-btn" type="button"><span class="visually-hidden">Календарь</span></button>
+          <label for="depart-date">Дата выезда:</label>
+          <div class="input-date-block">
+            <input type="text" name="depart-date" id="depart-date" placeholder="4 июля 2017" required>
+            <button class="calendar-btn" type="button"><span class="visually-hidden">Календарь</span></button>
+          </div>
         </div>
         <div class="hotel-form-item">
           <label for="adult-count">Взрослые:</label>
@@ -164,18 +168,19 @@
     </div>
     <ul class="social">
       <li class="social-item">
-        <a class="social-btn twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+        <a class="social-btn twitter" href="#"><span class="visually-hidden">Ссылка на страницу в Twitter</span></a>
       </li>
       <li class="social-item">
-        <a class="social-btn facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+        <a class="social-btn facebook" href="#"><span class="visually-hidden">Ссылка на страницу в Facebook</span></a>
       </li>
       <li class="social-item">
-        <a class="social-btn youtube" href="#"><span class="visually-hidden">YouTube</span></a>
+        <a class="social-btn youtube" href="#"><span class="visually-hidden">Ссылка на канал в YouTube</span></a>
       </li>
     </ul>
     <div class="html-logo">
       <span>website by</span>
-      <a class="html-logo-link" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span>
+      <a class="html-logo-link" href="https://htmlacademy.ru">
+        <span class="visually-hidden">Разработано HTML Academy</span>
         <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="currentColor" />
           <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="currentColor" />
