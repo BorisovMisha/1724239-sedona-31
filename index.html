@@ -145,16 +145,18 @@
         </div>
         <div class="hotel-form-item">
           <label for="adult-count">Взрослые:</label>
-          <button class="minus-btn" type="button"><span class="visually-hidden">Уменьшить</span></button>
+          <button class="minus-btn adult-btn" type="button"><span class="visually-hidden">Уменьшить</span></button>
           <input type="text" name="adult-count" id="adult-count" placeholder="2" required>
-          <button class="plus-btn" type="button"><span class="visually-hidden">Увеличить</span></button>
+          <button class="plus-btn adult-btn" type="button"><span class="visually-hidden">Увеличить</span></button>
           <label for="child-count">Дети:</label>
-          <button class="minus-btn" type="button"><span class="visually-hidden">Уменьшить</span></button>
+          <button class="minus-btn child-btn" type="button"><span class="visually-hidden">Уменьшить</span></button>
           <input type="text" name="child-count" id="child-count" placeholder="0" required>
-          <button class="plus-btn" type="button"><span class="visually-hidden">Увеличить</span></button>
+          <button class="plus-btn child-btn" type="button"><span class="visually-hidden">Увеличить</span></button>
         </div>
         <button class="hotel-find-btn" type="submit"><span>Найти</span></button>
       </form>
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8883463296!2d-112.35552755251767!3d34.854373356423885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1512217283379" width="1199" height="593" allowfullscreen title="Карта города Седона"></iframe>
     </section>
 
   </main>
@@ -181,7 +183,7 @@
       <span>website by</span>
       <a class="html-logo-link" href="https://htmlacademy.ru">
         <span class="visually-hidden">Разработано HTML Academy</span>
-        <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="115" height="33" viewBox="0 0 115 33" fill="none" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="currentColor" />
           <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="currentColor" />
           <path d="M26.6171 4.82696H21.8082V1.07349H19.7778V4.82696H17.8542V6.80022H19.7778V12.7843C19.7778 14.5002 20.7396 15.4439 22.4708 15.4439H26.6171V13.4492H22.8769C22.193 13.4492 21.8082 13.0632 21.8082 12.3983V6.80022H26.6171V4.82696Z" fill="currentColor" />
@@ -198,7 +200,7 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
