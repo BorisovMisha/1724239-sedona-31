@@ -431,6 +431,8 @@ input[type="checkbox"].visually-hidden {
   border-radius: 0;
   background-color: var(--basic-brown);
   color: var(--basic-white);
+  font-family: inherit;
+  text-transform: uppercase;
 }
 
 .search-btn:hover,
@@ -449,6 +451,7 @@ input[type="checkbox"].visually-hidden {
   width: 100%;
   background-color: var(--basic-gray);
   margin-bottom: -127px;
+  overflow: hidden;
 }
 
 /*Search form for hotels*/
@@ -469,6 +472,18 @@ input[type="checkbox"].visually-hidden {
   box-shadow: 0 5px 15px 0 var(--basic-shadow);
 }
 
+.hotel-form-close {
+  display: none;
+}
+
+.hotel-form-open {
+  display: flex;
+  animation: fadeTop 5s ease;
+}
+
+.hotel-form .modal-error input {
+  border-color: red;
+}
 
 .hotel-form-item {
   display: flex;
@@ -532,8 +547,9 @@ input[type="checkbox"].visually-hidden {
 .hotel-form input[name="child-count"],
 .hotel-form input[name="adult-count"] {
   width: 38px;
-  padding-left: 14px;
-  padding-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
 }
 
 .minus-btn,
@@ -1109,6 +1125,10 @@ input[type="checkbox"].visually-hidden {
   border: none;
 }
 
+.map .map-img-close {
+  display: none;
+}
+
 /*Footer*/
 .main-footer {
   display: grid;
@@ -1217,4 +1237,14 @@ input[type="checkbox"].visually-hidden {
 
 .html-logo-link:active {
   color: var(--special-neutral-3);
+}
+
+@keyframes fadeTop {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+  }
+
+  to {
+    transform: translateX(-50%) translateY(0);
+  }
 }
